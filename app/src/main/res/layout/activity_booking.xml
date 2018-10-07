@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#424858"
+    android:orientation="vertical"
+    tools:context=".BookingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#262d3f"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:src="@drawable/arrow" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="40dp"
+            android:layout_weight="12"
+            android:gravity="center"
+            android:text="Booking"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10">
+
+        <TextView
+            android:id="@+id/restaurantLabel"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_booking"
+            android:gravity="left|center"
+            android:text="\tRestaurant"
+            android:textColor="#fff"
+            android:textSize="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/restaurantLabelAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Address:"
+            android:textSize="16dp"
+            android:textColor="#fff"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/restaurantLabel" />
+
+        <TextView
+            android:id="@+id/restaurantAddress1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="0dp"
+            android:fontFamily="sans-serif-light"
+            android:maxLines="2"
+            android:text="Lorem ipsum dolor sit amte,"
+            android:textSize="16dp"
+            android:textColor="#fff"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/restaurantLabelAddress" />
+        <TextView
+            android:id="@+id/restaurantAddress2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="0dp"
+            android:fontFamily="sans-serif-light"
+            android:maxLines="2"
+            android:text="consectetur"
+            android:textSize="16dp"
+            android:textColor="#fff"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/restaurantAddress1" />
+        <TextView
+            android:id="@+id/phoneLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="40dp"
+            android:text="Phone:  "
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/restaurantAddress2"/>
+
+        <TextView
+            android:id="@+id/phoneNumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="+44 12 3456 789"
+            android:textColor="#fff"
+            android:textSize="16dp"
+            android:textStyle="italic"
+            app:layout_constraintLeft_toRightOf="@id/phoneLabel"
+            app:layout_constraintBaseline_toBaselineOf="@+id/phoneLabel" />
+
+        <TextView
+            android:id="@+id/website"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="www.restaurantwebsite.com"
+            android:textSize="16dp"
+            android:textColor="#fff"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/phoneLabel"/>
+
+        <ImageView
+            android:id="@+id/borderRestaurant"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/border"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/website"/>
+
+        <TextView
+            android:id="@+id/cafeLabel"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_booking"
+            android:gravity="center"
+            android:text="Café"
+            android:textColor="#fff"
+            android:textSize="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/borderRestaurant" />
+
+        <TextView
+            android:id="@+id/cafeLabelAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Address:"
+            android:textSize="16dp"
+            android:textColor="#fff"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cafeLabel" />
+
+        <TextView
+            android:id="@+id/cafeAddress1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="0dp"
+            android:fontFamily="sans-serif-light"
+            android:maxLines="2"
+            android:text="Lorem ipsum dolor sit amte,"
+            android:textSize="16dp"
+            android:textColor="#fff"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cafeLabelAddress" />
+        <TextView
+            android:id="@+id/cafeAddress2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="0dp"
+            android:fontFamily="sans-serif-light"
+            android:maxLines="2"
+            android:text="consectetur"
+            android:textSize="16dp"
+            android:textColor="#fff"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cafeAddress1" />
+        <TextView
+            android:id="@+id/cafePhoneLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="40dp"
+            android:text="Phone:  "
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cafeAddress2"/>
+
+        <TextView
+            android:id="@+id/cafePhoneNumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="+44 12 3456 789"
+            android:textColor="#fff"
+            android:textSize="16dp"
+            android:textStyle="italic"
+            app:layout_constraintLeft_toRightOf="@id/cafePhoneLabel"
+            app:layout_constraintBaseline_toBaselineOf="@+id/cafePhoneLabel" />
+
+        <TextView
+            android:id="@+id/cafeWebsite"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="www.cafewebsite.com"
+            android:textSize="16dp"
+            android:textColor="#fff"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cafePhoneNumber"/>
+
+        <ImageView
+            android:id="@+id/borderCafe"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/border"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cafeWebsite"/>
+
+        <TextView
+            android:id="@+id/pubLabel"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_booking"
+            android:gravity="center"
+            android:text="Pub"
+            android:textColor="#fff"
+            android:textSize="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/borderCafe" />
+
+        <TextView
+            android:id="@+id/pubLabelAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Address:"
+            android:textSize="16dp"
+            android:textColor="#fff"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pubLabel" />
+
+        <TextView
+            android:id="@+id/pubAddress1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="0dp"
+            android:fontFamily="sans-serif-light"
+            android:maxLines="2"
+            android:text="Lorem ipsum dolor sit amte,"
+            android:textSize="16dp"
+            android:textColor="#fff"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pubLabelAddress" />
+        <TextView
+            android:id="@+id/pubAddress2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="0dp"
+            android:fontFamily="sans-serif-light"
+            android:maxLines="2"
+            android:text="consectetur"
+            android:textSize="16dp"
+            android:textColor="#fff"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pubAddress1" />
+        <TextView
+            android:id="@+id/pubPhoneLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="40dp"
+            android:text="Phone:  "
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pubAddress2"/>
+
+        <TextView
+            android:id="@+id/pubPhoneNumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="+44 12 3456 789"
+            android:textColor="#fff"
+            android:textSize="16dp"
+            android:textStyle="italic"
+            app:layout_constraintLeft_toRightOf="@id/pubPhoneLabel"
+            app:layout_constraintBaseline_toBaselineOf="@+id/pubPhoneLabel" />
+
+        <TextView
+            android:id="@+id/pubWebsite"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="www.pubwebsite.com"
+            android:textSize="16dp"
+            android:textColor="#fff"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pubPhoneNumber"/>
+
+        <ImageView
+            android:id="@+id/borderPub"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/border"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pubWebsite"/>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</LinearLayout>
