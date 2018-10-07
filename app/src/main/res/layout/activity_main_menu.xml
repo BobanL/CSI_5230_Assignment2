@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainMenu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".main_menu">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/logo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonFeedback"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button"
+        android:fontFamily="sans-serif-light"
+        android:text="\nFeedback"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageFeedback"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/feedback"
+        app:layout_constraintEnd_toEndOf="@+id/buttonFeedback"
+        app:layout_constraintStart_toStartOf="@+id/buttonFeedback"
+        app:layout_constraintTop_toTopOf="@+id/buttonFeedback" />
+
+    <Button
+        android:id="@+id/buttonBooking"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button"
+        android:fontFamily="sans-serif-light"
+        android:text="\nBooking"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageBooking"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/booking"
+        app:layout_constraintEnd_toEndOf="@+id/buttonBooking"
+        app:layout_constraintStart_toStartOf="@+id/buttonBooking"
+        app:layout_constraintTop_toTopOf="@+id/buttonBooking" />
+
+    <Button
+        android:id="@+id/buttonContact"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button"
+        android:fontFamily="sans-serif-light"
+        android:text="\nContact"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageContact"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/place"
+        app:layout_constraintEnd_toEndOf="@+id/buttonContact"
+        app:layout_constraintStart_toStartOf="@+id/buttonContact"
+        app:layout_constraintTop_toTopOf="@+id/buttonContact" />
+
+    <Button
+        android:id="@+id/buttonMenu"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/button"
+        android:fontFamily="sans-serif-light"
+        android:text="\nMenu"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toTopOf="@id/buttonFeedback"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageMenu"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/menu"
+        app:layout_constraintEnd_toEndOf="@+id/buttonMenu"
+        app:layout_constraintStart_toStartOf="@+id/buttonMenu"
+        app:layout_constraintTop_toTopOf="@+id/buttonMenu" />
+
+    <Button
+        android:id="@+id/buttonNews"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/button"
+        android:fontFamily="sans-serif-light"
+        android:text="\nNews"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toTopOf="@id/buttonBooking"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageNews"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/news"
+        app:layout_constraintEnd_toEndOf="@+id/buttonNews"
+        app:layout_constraintStart_toStartOf="@+id/buttonNews"
+        app:layout_constraintTop_toTopOf="@+id/buttonNews" />
+
+    <Button
+        android:id="@+id/buttonMovie"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/button"
+        android:fontFamily="sans-serif-light"
+        android:text="\nMovie"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toTopOf="@id/buttonContact"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageMovie"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/movies"
+        app:layout_constraintEnd_toEndOf="@+id/buttonMovie"
+        app:layout_constraintStart_toStartOf="@+id/buttonMovie"
+        app:layout_constraintTop_toTopOf="@+id/buttonMovie" />
+
+
+</android.support.constraint.ConstraintLayout>
