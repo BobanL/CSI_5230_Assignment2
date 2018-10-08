@@ -24,7 +24,11 @@
         <activity
             android:name=".BookingActivity"
             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
-        <activity android:name=".ContactActivity"
+        <activity
+            android:name=".ContactActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".FeedbackActivity"
             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
     </application>
 

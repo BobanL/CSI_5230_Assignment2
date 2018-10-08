@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#424858"
+    tools:context=".FeedbackActivity">
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:background="#262d3f">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_column="1"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:src="@drawable/arrow" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="2"
+            android:layout_weight="12"
+            android:gravity="center"
+            android:text="Send Feedback"
+            android:textSize="18dp" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="3"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:src="@drawable/plane" />
+    </TableRow>
+
+    <android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/nameLabel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="2"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:text="YourName"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="\tSladeDesign"
+            android:inputType="text"
+            app:layout_constraintBaseline_toBaselineOf="@id/nameLabel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/nameLabel" />
+
+        <TextView
+            android:id="@+id/emailLabel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:text="Email"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="@+id/nameLabel"
+            app:layout_constraintTop_toBottomOf="@id/nameLabel" />
+
+        <EditText
+            android:id="@+id/editEmail"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="\temail@email.com"
+            android:inputType="textEmailAddress"
+            app:layout_constraintBaseline_toBaselineOf="@id/emailLabel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/emailLabel" />
+
+        <TextView
+            android:id="@+id/messageLabel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:text="Message"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="@+id/emailLabel"
+            app:layout_constraintTop_toBottomOf="@id/emailLabel" />
+
+        <EditText
+            android:id="@+id/editMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/rounded_edittext"
+            android:gravity="left"
+            android:hint="\tHelloWorld"
+            android:inputType="textMultiLine"
+            android:lines="15"
+            android:maxLines="15"
+            app:layout_constraintBaseline_toBaselineOf="@id/messageLabel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/messageLabel" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</TableLayout>
