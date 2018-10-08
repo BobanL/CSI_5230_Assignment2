@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".MenuActivity">
+
+    <LinearLayout
+        android:id="@+id/mainBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:alpha=".9"
+        android:background="#373e4f"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:src="@drawable/arrow" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="40dp"
+            android:layout_weight="12"
+            android:gravity="center"
+            android:text="Menu"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/borderSoup"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/button"
+        app:layout_constraintBottom_toBottomOf="@+id/soup"
+        app:layout_constraintEnd_toEndOf="@+id/soup"
+        app:layout_constraintStart_toStartOf="@+id/soup"
+        app:layout_constraintTop_toTopOf="@+id/soup" />
+
+    <ImageView
+        android:id="@+id/soup"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="150dp"
+        android:src="@drawable/soups"
+        android:tint="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainBar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginRight="30dp"
+        android:text="Soup"
+        android:textColor="#fff"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/soup"
+        app:layout_constraintLeft_toRightOf="@+id/soup"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/soup"
+        app:layout_constraintTop_toBottomOf="@id/mainBar"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/borderSalad"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/button"
+        app:layout_constraintBottom_toBottomOf="@+id/salad"
+        app:layout_constraintEnd_toEndOf="@+id/salad"
+        app:layout_constraintStart_toStartOf="@+id/salad"
+        app:layout_constraintTop_toTopOf="@+id/salad" />
+
+    <ImageView
+        android:id="@+id/salad"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="150dp"
+        android:src="@drawable/salads"
+        android:tint="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/borderSoup" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginRight="30dp"
+        android:text="Salad"
+        android:textColor="#fff"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/salad"
+        app:layout_constraintLeft_toRightOf="@+id/salad"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/salad"
+        app:layout_constraintTop_toBottomOf="@id/mainBar"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/borderMain"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/button"
+        app:layout_constraintBottom_toBottomOf="@+id/mainCourse"
+        app:layout_constraintEnd_toEndOf="@+id/mainCourse"
+        app:layout_constraintStart_toStartOf="@+id/mainCourse"
+        app:layout_constraintTop_toTopOf="@+id/mainCourse" />
+
+    <ImageView
+        android:id="@+id/mainCourse"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="150dp"
+        android:src="@drawable/main"
+        android:tint="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/borderSalad" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginRight="30dp"
+        android:text="Main Course"
+        android:textColor="#fff"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/mainCourse"
+        app:layout_constraintLeft_toRightOf="@+id/mainCourse"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mainCourse"
+        app:layout_constraintTop_toBottomOf="@id/mainBar"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/borderSide"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/button"
+        app:layout_constraintBottom_toBottomOf="@+id/side"
+        app:layout_constraintEnd_toEndOf="@+id/side"
+        app:layout_constraintStart_toStartOf="@+id/side"
+        app:layout_constraintTop_toTopOf="@+id/side" />
+
+    <ImageView
+        android:id="@+id/side"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="150dp"
+        android:src="@drawable/sides"
+        android:tint="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/borderMain" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginRight="30dp"
+        android:text="Side Dishes"
+        android:textColor="#fff"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/side"
+        app:layout_constraintLeft_toRightOf="@+id/side"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/side"
+        app:layout_constraintTop_toBottomOf="@id/mainBar"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/borderDessert"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/button"
+        app:layout_constraintBottom_toBottomOf="@+id/dessert"
+        app:layout_constraintEnd_toEndOf="@+id/dessert"
+        app:layout_constraintStart_toStartOf="@+id/dessert"
+        app:layout_constraintTop_toTopOf="@+id/dessert" />
+
+    <ImageView
+        android:id="@+id/dessert"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="150dp"
+        android:src="@drawable/desserts"
+        android:tint="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/borderSide" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginRight="30dp"
+        android:text="Dessert"
+        android:textColor="#fff"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/dessert"
+        app:layout_constraintLeft_toRightOf="@+id/dessert"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dessert"
+        app:layout_constraintTop_toBottomOf="@id/mainBar"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/borderCake"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/button"
+        app:layout_constraintBottom_toBottomOf="@+id/cake"
+        app:layout_constraintEnd_toEndOf="@+id/cake"
+        app:layout_constraintStart_toStartOf="@+id/cake"
+        app:layout_constraintTop_toTopOf="@+id/cake" />
+
+    <ImageView
+        android:id="@+id/cake"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="150dp"
+        android:src="@drawable/pies"
+        android:tint="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/borderDessert" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginRight="30dp"
+        android:text="Cake"
+        android:textColor="#fff"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cake"
+        app:layout_constraintLeft_toRightOf="@+id/cake"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cake"
+        app:layout_constraintTop_toBottomOf="@id/mainBar"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -30,6 +30,10 @@
         <activity
             android:name=".FeedbackActivity"
             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".MenuActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+
     </application>
 
 </manifest>

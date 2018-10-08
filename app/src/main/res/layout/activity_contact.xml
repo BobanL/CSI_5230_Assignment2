@@ -62,7 +62,7 @@
         <ImageView
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:src="@drawable/Info"
+            android:src="@drawable/info"
             android:layout_alignRight="@+id/orangeBorder"
             android:layout_alignBottom="@+id/orangeBorder"
             android:layout_marginRight="40dp"
@@ -190,7 +190,7 @@
         <ImageView
             android:layout_width="25dp"
             android:layout_height="23dp"
-            android:src="@drawable/Google"
+            android:src="@drawable/google"
             android:layout_alignLeft="@id/circleG"
             android:layout_alignBottom="@id/circleG"
             android:layout_marginBottom="10dp"
