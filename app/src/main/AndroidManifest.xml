@@ -8,7 +8,8 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+
         <activity
             android:name=".MainActivity"
             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
@@ -36,6 +37,7 @@
         <activity
             android:name=".NewsListActivity"
             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+        <activity android:name=".NewsOpenActivity"></activity>
     </application>
 
 </manifest>

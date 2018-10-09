@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewsOpenActivity">
+
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:background="#262d3f"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:src="@drawable/arrow" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="40dp"
+            android:layout_weight="12"
+            android:gravity="center"
+            android:text="Contact"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/blank"
+        android:layout_width="match_parent"
+        android:layout_height="325dp"
+        android:layout_below="@+id/topBar"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/newsbackground" />
+
+    <ImageView
+        android:id="@+id/buttonCart"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignBottom="@+id/blank"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="-40dp"
+        android:alpha=".8"
+        android:elevation="1dp"
+        android:src="@drawable/active1" />
+
+    <ImageView
+        android:id="@+id/cart"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignStart="@+id/buttonCart"
+        android:layout_alignTop="@+id/buttonCart"
+        android:layout_alignEnd="@+id/buttonCart"
+        android:layout_alignBottom="@+id/buttonCart"
+        android:layout_margin="25dp"
+        android:elevation="2dp"
+        android:src="@drawable/cart" />
+
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignBottom="@+id/blank"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="-45dp"
+        android:alpha=".7"
+        android:elevation="1dp"
+        android:src="@drawable/active2" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignBottom="@+id/blank"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="-50dp"
+        android:alpha=".5"
+        android:elevation="1dp"
+        android:src="@drawable/active2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/blank"
+        android:layout_alignParentEnd="true"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight=".3"
+            android:text="LOREM IPSUM DOLOR SIT AMET, CONSECTETUR"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="30dp"
+            android:layout_weight=".1"
+            android:alpha=".7"
+            android:text="Monday, October 8th, 2018"
+            android:textColor="#000"
+            android:textSize="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+            android:alpha=".7"
+            android:justificationMode="inter_word"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci a scelerisque purus semper eget duis at. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum. Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi tristique."
+            android:textColor="#000"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/circleG"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/circle"
+        android:tint="#000" />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="23dp"
+        android:layout_alignLeft="@id/circleG"
+        android:layout_alignBottom="@id/circleG"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/google"
+        android:tint="#000" />
+
+
+    <ImageView
+        android:id="@+id/circleT"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toLeftOf="@id/circleG"
+        android:src="@drawable/circle"
+        android:tint="#000" />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="23dp"
+        android:layout_alignLeft="@id/circleT"
+        android:layout_alignBottom="@id/circleT"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/twitter"
+        android:tint="#000" />
+
+    <ImageView
+        android:id="@+id/circleF"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toLeftOf="@id/circleT"
+        android:src="@drawable/circle"
+        android:tint="#000" />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="23dp"
+        android:layout_alignLeft="@id/circleF"
+        android:layout_alignBottom="@id/circleF"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/facebook"
+        android:tint="#000" />
+
+
+</RelativeLayout>
