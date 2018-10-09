@@ -36,8 +36,15 @@
         <activity
             android:name=".NewsListActivity"
             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
-        <activity android:name=".NewsOpenActivity" />
-        <activity android:name=".SaladPageActivity"></activity>
+        <activity
+            android:name=".NewsOpenActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".SaladPageActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".WinePageActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
     </application>
 
 </manifest>
