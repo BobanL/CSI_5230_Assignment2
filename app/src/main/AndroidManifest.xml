@@ -45,6 +45,7 @@
         <activity
             android:name=".WinePageActivity"
             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+        <activity android:name=".SaladListActivity"></activity>
     </application>
 
 </manifest>
