@@ -1,0 +1,516 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#424858"
+    tools:context=".FeedbackActivity">
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:background="#373e4f">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_column="1"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:src="@drawable/arrow" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="2"
+            android:layout_marginRight="30dp"
+            android:layout_weight="12"
+            android:gravity="center"
+            android:text="News"
+            android:textSize="18sp" />
+
+    </TableRow>
+
+    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        android:rowCount="4">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:scaleType="fitXY"
+            android:src="@drawable/newsbackground" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:background="#fff"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:gravity="start"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:text="WINE NAME IS HERE"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:alpha=".8"
+                android:gravity="start"
+                android:paddingLeft="8dp"
+                android:text="Red Wine / 2005"
+                android:textColor="#000"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:alpha=".9"
+                android:gravity="start"
+                android:paddingLeft="8dp"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7"
+                android:background="#373e4f">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="29dp"
+                    android:src="@drawable/gradient2"
+                    android:tint="#fff" />
+
+                <ImageView
+                    android:id="@+id/buttonCart1"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="30dp"
+                    android:alpha=".8"
+                    android:elevation="3dp"
+                    android:src="@drawable/active1" />
+
+                <TextView
+                    android:id="@+id/cart"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignStart="@+id/buttonCart1"
+                    android:layout_alignTop="@+id/buttonCart1"
+                    android:layout_alignEnd="@+id/buttonCart1"
+                    android:layout_alignBottom="@+id/buttonCart1"
+                    android:layout_margin="4dp"
+                    android:elevation="4dp"
+                    android:gravity="center"
+                    android:text="BEST PRICE"
+                    android:textColor="#fff"
+                    android:textSize="10dp" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="27dp"
+                    android:alpha=".7"
+                    android:elevation="1dp"
+                    android:src="@drawable/active2" />
+
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="24dp"
+                    android:alpha=".5"
+                    android:elevation="1dp"
+                    android:src="@drawable/active3" />
+
+
+                <TextView
+                    android:id="@+id/glassPrice1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="30dp"
+                    android:text="$2.50"
+                    android:textColor="#fff"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/glassPrice1"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@+id/glassPrice1"
+                    android:alpha=".8"
+                    android:text="Glass"
+                    android:textColor="#fff"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/bottlePrice1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/glassPrice1"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="10dp"
+                    android:text="$26.00"
+                    android:textColor="#fff"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/bottlePrice1"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@+id/bottlePrice1"
+                    android:alpha=".8"
+                    android:text="Bottle"
+                    android:textColor="#fff"
+                    android:textStyle="italic" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:background="#fff"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:gravity="start"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:text="WINE NAME IS HERE"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:alpha=".8"
+                android:gravity="start"
+                android:paddingLeft="8dp"
+                android:text="Red Wine / 2005"
+                android:textColor="#000"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:alpha=".9"
+                android:gravity="start"
+                android:paddingLeft="8dp"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7"
+                android:background="#373e4f">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="29dp"
+                    android:src="@drawable/gradient2"
+                    android:tint="#fff" />
+
+                <ImageView
+                    android:id="@+id/buttonCart2"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="30dp"
+                    android:alpha=".8"
+                    android:elevation="3dp"
+                    android:src="@drawable/active1" />
+
+                <TextView
+                    android:id="@+id/cart2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignStart="@+id/buttonCart2"
+                    android:layout_alignTop="@+id/buttonCart2"
+                    android:layout_alignEnd="@+id/buttonCart2"
+                    android:layout_alignBottom="@+id/buttonCart2"
+                    android:layout_margin="4dp"
+                    android:elevation="4dp"
+                    android:gravity="center"
+                    android:text="BEST PRICE"
+                    android:textColor="#fff"
+                    android:textSize="10dp" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="27dp"
+                    android:alpha=".7"
+                    android:elevation="1dp"
+                    android:src="@drawable/active2" />
+
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="24dp"
+                    android:alpha=".5"
+                    android:elevation="1dp"
+                    android:src="@drawable/active3" />
+
+
+                <TextView
+                    android:id="@+id/glassPrice2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="30dp"
+                    android:text="$2.50"
+                    android:textColor="#fff"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/glassPrice2"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@+id/glassPrice2"
+                    android:alpha=".8"
+                    android:text="Glass"
+                    android:textColor="#fff"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/bottlePrice2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/glassPrice2"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="10dp"
+                    android:text="$26.00"
+                    android:textColor="#fff"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/bottlePrice2"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@+id/bottlePrice2"
+                    android:alpha=".8"
+                    android:text="Bottle"
+                    android:textColor="#fff"
+                    android:textStyle="italic" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:scaleType="fitXY"
+            android:src="@drawable/newsbackground" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:scaleType="fitXY"
+            android:src="@drawable/newsbackground" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:background="#fff"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:gravity="start"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:text="WINE NAME IS HERE"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:alpha=".8"
+                android:gravity="start"
+                android:paddingLeft="8dp"
+                android:text="Red Wine / 2005"
+                android:textColor="#000"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:alpha=".9"
+                android:gravity="start"
+                android:paddingLeft="8dp"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7"
+                android:background="#373e4f">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="29dp"
+                    android:src="@drawable/gradient2"
+                    android:tint="#fff" />
+
+                <ImageView
+                    android:id="@+id/buttonCart3"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="30dp"
+                    android:alpha=".8"
+                    android:elevation="3dp"
+                    android:src="@drawable/active1" />
+
+                <TextView
+                    android:id="@+id/cart3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignStart="@+id/buttonCart3"
+                    android:layout_alignTop="@+id/buttonCart3"
+                    android:layout_alignEnd="@+id/buttonCart3"
+                    android:layout_alignBottom="@+id/buttonCart3"
+                    android:layout_margin="4dp"
+                    android:elevation="4dp"
+                    android:gravity="center"
+                    android:text="BEST PRICE"
+                    android:textColor="#fff"
+                    android:textSize="10dp" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="27dp"
+                    android:alpha=".7"
+                    android:elevation="1dp"
+                    android:src="@drawable/active2" />
+
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="24dp"
+                    android:alpha=".5"
+                    android:elevation="1dp"
+                    android:src="@drawable/active3" />
+
+
+                <TextView
+                    android:id="@+id/glassPrice3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="30dp"
+                    android:text="$2.50"
+                    android:textColor="#fff"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/glassPrice3"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@+id/glassPrice3"
+                    android:alpha=".8"
+                    android:text="Glass"
+                    android:textColor="#fff"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/bottlePrice3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/glassPrice3"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="10dp"
+                    android:text="$26.00"
+                    android:textColor="#fff"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/bottlePrice3"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@+id/bottlePrice3"
+                    android:alpha=".8"
+                    android:text="Bottle"
+                    android:textColor="#fff"
+                    android:textStyle="italic" />
+            </RelativeLayout>
+        </LinearLayout>
+    </GridLayout>
+</TableLayout>
